@@ -1,0 +1,19 @@
+Date: 9/6/2024 12:57:39 AM
+AcquirerMessage: 00:Approved
+AcquirerRRN: 424921044109
+CartId: CART#44cea904-616f-4da6-b2ef-940aed09d241
+CustomerEmail: mohamedgamal1455@gmail.com
+RespCode: 429863
+RespMessage: Authorised
+RespStatus: A
+Token: 
+TranRef: PTS2424937770327
+Error: An error was generated for warning 'Microsoft.EntityFrameworkCore.Infrastructure.DetachedLazyLoadingWarning': An attempt was made to lazy-load navigation 'CoursesData' on a detached entity of type 'CoursesSchedulessProxy'. Lazy loading is not supported for detached entities or entities that are loaded with 'AsNoTracking'. This exception can be suppressed or logged by passing event ID 'CoreEventId.DetachedLazyLoadingWarning' to the 'ConfigureWarnings' method in 'DbContext.OnConfiguring' or 'AddDbContext'.
+StackTrace:    at Microsoft.EntityFrameworkCore.Diagnostics.EventDefinition`2.Log[TLoggerCategory](IDiagnosticsLogger`1 logger, TParam1 arg1, TParam2 arg2)
+   at Microsoft.EntityFrameworkCore.Diagnostics.CoreLoggerExtensions.DetachedLazyLoadingWarning(IDiagnosticsLogger`1 diagnostics, DbContext context, Object entityType, String navigationName)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.LazyLoader.ShouldLoad(Object entity, String navigationName, NavigationEntry& navigationEntry)
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.LazyLoader.Load(Object entity, String navigationName)
+   at Microsoft.EntityFrameworkCore.Proxies.Internal.LazyLoadingInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.CoursesSchedulessProxy.get_CoursesData()
+   at todoApiAbadnet.Controllers.ReservationsController.PayTabsCallback(String acquirerMessage, String acquirerRRN, String cartId, String customerEmail, String respCode, String respMessage, String respStatus, String token, String tranRef) in C:\Users\HP\source\repos\ProjectNow\todoApiAbadnet\todoApiAbadnet\Controllers\ReservationsController.cs:line 1162

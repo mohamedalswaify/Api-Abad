@@ -1,0 +1,16 @@
+Date: 9/8/2024 4:04:54 PM
+AcquirerMessage: 
+AcquirerRRN: 
+CartId: 
+CustomerEmail: 
+RespCode: 
+RespMessage: 
+RespStatus: 
+Token: 
+TranRef: 
+Exception: System.ArgumentNullException: Value cannot be null. (Parameter 'stringToEscape')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.UriHelper.EscapeString(String stringToEscape, Boolean checkExistingEscaped, ReadOnlySpan`1 unreserved, Char forceEscape1, Char forceEscape2)
+   at System.Uri.EscapeDataString(String stringToEscape)
+   at todoApiAbadnet.Controllers.ReservationsController.PayTabsCallback(String acquirerMessage, String acquirerRRN, String cartId, String customerEmail, String respCode, String respMessage, String respStatus, String token, String tranRef) in C:\Users\HP\source\repos\ProjectNow\todoApiAbadnet\todoApiAbadnet\Controllers\ReservationsController.cs:line 1124
